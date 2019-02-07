@@ -1,0 +1,50 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.top-container {
+  background-image: url('./computer-background-1.jpeg');  
+  height: 100vh;      
+}
+
+.top-container-overlay {
+  background: rgba(3, 140, 178, 0.109);
+  height: 100vh;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center;
+}
+
+.title {
+  color: white;  
+  font-size: 35px;
+  font-weight: bold;      
+}
+.job-title {
+  font-size: 90px;
+}
+
+.header-navbar {
+  list-style: none;   
+  float: right;
+}
+
+.header-navbar-item {
+  display: inline-block;
+  margin: 24px 24px 24px 24px;
+  padding: 24px 24px 24px 24px;
+  border: 2px solid #038DB2;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.header-navbar-item:hover {  
+  border: 2px solid #ff8614;
+  transition: border 0.2s;
+}
