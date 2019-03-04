@@ -2,13 +2,7 @@
 header {
   height: 32px;
   width: 100%;  
-}
-
-.back-button {
-  text-decoration: none;
-  cursor: pointer;
-  color: gray;
-  margin: 2%;  
+  margin-bottom: 10%;
 }
 
 .heading-work {
@@ -19,69 +13,149 @@ header {
 
 .portifolio-container {   
   width: 100%;
-  height: 100%;  
-
+  height: 100%;    
 }
 
 .portifolio-list {
-  list-style-type: none;                  
-}
-
-.row {
+  list-style-type: none; 
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row; 
+  flex-wrap: wrap;                    
 }
 
 .work {    
-  width: 25%;  
-  height: 400px;    
-  margin: 2%;  
-  border-radius: 20px;  
-  border: 5px solid #bec2c3;    
+  width: 100%;  
+  min-height: 20rem;           
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden;    
 }
 
-.work:active,
-.work:hover {
-  border: 5px solid rgb(230, 190, 17);
-  transition: border 0.2s;  
-}
 
 .work-image {
-  background-size: contain;  
-  height: 50%;
-  width: 50%;
-  border-radius: 15px;        
+  background-size: cover;    
+  height: 30vh;
+  width: 50vw;
+  border-radius: 5px;          
   align-self: center;
 }
 
 .work-header {
   background: #e7e7e7;      
-  height: 50px;
+  min-height: 3rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;    
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;  
+  align-items: center;      
+  margin-bottom: 1rem;    
 }
 
 .work-header p {
+  text-align:  center;  
+  margin: 0rem 1rem;
   color: #666666;
   font-weight: bold;    
+  font-size: 1.3rem;
 }
 
-.techstack-container {
-  width: 100%;  
-  border-top: 2px solid #bec2c3;
+.work-description {
+  text-align: justify;
+  font-size: 1.3rem; 
+  margin: 0rem 1rem; 
+  min-height: 10rem;
+  color: #666666;
+  display: flex;
+  align-items: center;
 }
 
-.techstack-list {
-  margin-left: 3%;
-  margin-top: 
+.techstack-list {  
+  list-style-type: none;        
+  height: 100%;
+  display: flex;    
+  flex-direction: column;
+  border-top: 2px solid #bec2c3;  
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
-.techstack-item
+.techstack-item {  
+  font-size: 1.4rem;
+  color: #666666;
+  margin: 0.6rem 0rem;
+}
+
+@media(min-width: 40rem) {
+
+  header {
+    height: 32px;
+    width: 100%;  
+    margin-bottom: 5%;
+  }
+  
+    
+  .heading-work {
+    text-align: center;
+    color: #6fb8cc;  
+  }
+
+
+  .portifolio-container {   
+    width: 100%;
+    height: 100%;    
+  }
+
+  .portifolio-list {
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;                    
+  }
+
+  .work {    
+    width: 30%;  
+    min-height: 20rem;          
+    margin: 0% 10%; 
+    display: flex;
+    flex-direction: column;  
+    overflow: hidden;      
+  }
+
+  .work-image {
+    background-size: cover;    
+    height: 30vh;
+    width: 30vw;
+    border-radius: 5px;          
+    align-self: center;
+  }
+
+  .work-header {
+    background: #e7e7e7;      
+    min-height: 3rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    margin-bottom: 1rem;    
+  }
+
+  .work-header p {
+    text-align:  center;  
+    margin: 0rem 1rem;
+    color: #666666;
+    font-weight: bold;    
+    font-size: 1.3rem;    
+  }
+
+  .work-description {
+    text-align: justify;
+    font-size: 1.3rem; 
+    margin: 0rem 1rem; 
+    min-height: 10rem;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+  }
+
+}
