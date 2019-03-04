@@ -1,24 +1,12 @@
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
 .top-container {
-  background-image: url('./computer-background-1.jpeg');  
-  height: 100vh;      
-}
-
-.top-container-overlay {
-  background: rgba(3, 140, 178, 0.109);
-  height: 100vh;
-  width: 100%; 
+  background: linear-gradient(to top, rgba(3, 140, 178, 0.103) 10%, transparent),
+  url("./computer-background-1.jpeg") left 10% bottom 20%/cover no-repeat border-box;  
   display: flex;
   flex-direction: column;
   align-items: center;   
   justify-content: center;
+  height: 100vh;      
 }
 
 .title {
@@ -45,6 +33,50 @@
 }
 
 .header-navbar-item:hover {  
-  border: 2px solid #ff8614;
+  border: 2px solid #ffd412;
   transition: border 0.2s;
+}
+
+.section {
+  height: 580px;
+  width: 100%;
+  border-top: 2px solid #b7b7b7;
+  padding-top: 50px;  
+}
+
+.heading-1 {
+  font-size: 2.5rem;
+  color: #038DB2;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+.about-me-text {
+  margin-top: 32px;
+  margin-left: 40px; 
+  margin-bottom: 32px;
+}
+
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills_container {
+  width: 80%;  
+  height: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #038cb2;
+  /* background: #038DB2; */
+  border-radius: 20px;
+}
+
+.skills_box {
+  width: 50%;    
+}
+
+.frontend_box {  
+  border-right: 2px solid #038cb2;
 }

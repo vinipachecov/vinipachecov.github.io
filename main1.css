@@ -1,0 +1,34 @@
+.container-image {
+  background: linear-gradient(to top, rgba(3, 140, 178, 0.205) 10%, transparent),
+  url("./computer-background-1.jpeg") right 0% bottom 0%/cover no-repeat border-box;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.greeting-container {      
+  background: white;      
+  position: absolute;      
+  top: 30%;  
+  padding: 2%;
+  border-radius: 14px;
+}
+
+.greeting-container p {
+  color: #666666;
+  text-align: center;  
+}
+
+.greeting-position {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.greeting {
+  font-size: 40px;      
+}

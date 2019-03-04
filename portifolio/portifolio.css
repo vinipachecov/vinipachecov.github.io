@@ -1,0 +1,87 @@
+
+header {
+  height: 32px;
+  width: 100%;  
+}
+
+.back-button {
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+  margin: 2%;  
+}
+
+.heading-work {
+  text-align: center;
+  color: #6fb8cc;  
+}
+
+
+.portifolio-container {   
+  width: 100%;
+  height: 100%;  
+
+}
+
+.portifolio-list {
+  list-style-type: none;                  
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.work {    
+  width: 25%;  
+  height: 400px;    
+  margin: 2%;  
+  border-radius: 20px;  
+  border: 5px solid #bec2c3;    
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.work:active,
+.work:hover {
+  border: 5px solid rgb(230, 190, 17);
+  transition: border 0.2s;  
+}
+
+.work-image {
+  background-size: contain;  
+  height: 50%;
+  width: 50%;
+  border-radius: 15px;        
+  align-self: center;
+}
+
+.work-header {
+  background: #e7e7e7;      
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;  
+}
+
+.work-header p {
+  color: #666666;
+  font-weight: bold;    
+}
+
+.techstack-container {
+  width: 100%;  
+  border-top: 2px solid #bec2c3;
+}
+
+.techstack-list {
+  margin-left: 3%;
+  margin-top: 
+}
+
+.techstack-item
