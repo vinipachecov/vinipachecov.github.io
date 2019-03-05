@@ -28,7 +28,14 @@ header {
   min-height: 20rem;           
   display: flex;
   flex-direction: column;
-  overflow: hidden;    
+  overflow: scroll;    
+}
+
+.work a {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 100%;  
 }
 
 
@@ -36,8 +43,7 @@ header {
   background-size: cover;    
   height: 30vh;
   width: 50vw;
-  border-radius: 5px;          
-  align-self: center;
+  border-radius: 5px;            
 }
 
 .work-header {
@@ -69,20 +75,22 @@ header {
 }
 
 .techstack-list {  
-  list-style-type: none;        
+  list-style-type: none;   
   height: 100%;
+  min-height: 15rem;    
   display: flex;    
   flex-direction: column;
   border-top: 2px solid #bec2c3;  
   justify-content: center;
   align-items: center;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .techstack-item {  
-  font-size: 1.4rem;
-  color: #666666;
-  margin: 0.6rem 0rem;
+  height: 22px;
+  font-size: 1rem;
+  margin: 0.2rem 0.5rem;    
+  color: #666666;  
 }
 
 @media(min-width: 40rem) {
@@ -157,5 +165,26 @@ header {
     align-items: center;
     overflow: auto;
   }
+
+
+  
+.techstack-list {  
+  list-style-type: none;   
+  height: 100%;
+  min-height: 15rem;    
+  display: flex;    
+  flex-direction: column;
+  border-top: 2px solid #bec2c3;  
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;  
+}
+
+.techstack-item {  
+  height: 22px;
+  font-size: 1rem;
+  margin: 0.2rem 0.5rem;    
+  color: #666666;  
+}
 
 }
