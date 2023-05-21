@@ -1,0 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;    
+}
+
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.heading-name {
+  margin-top: 3.5%;
+  margin-left: 10%;
+  color: #22070791;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {  
+  background-image: url("../resources/images/London-me.jpg");    
+  background-repeat: no-repeat;
+  background-clip: border-box;  
+  background-size: cover;
+  background-position: left 60% bottom 10%;
+  height: 40vh;      
+  width: 100%;      
+  border-radius: 20px;  
+  border: 4px solid #dfdddd;  
+  margin-top: 1rem;
+}
+
+
+.about-me-container {
+  width: 100%;
+  margin-top: 5%;
+  margin-right: 5%;  
+}
+
+.about-me-container p {
+  font-size: 1.2rem;
+}
+
+.about-me-professional-text {
+  margin: 1rem 1rem;
+  text-align: justify;  
+}
+
+.about-me-everyday-life {
+  margin: 1rem 1rem;
+  text-align: justify;  
+}
+
+.bottom-container{  
+  display: flex;
+  flex-direction: column
+}
+
+
+.personal-data-list {    
+  list-style-type: none;  
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  justify-content: flex-end;     
+  margin-top: 2%;     
+  margin-right: 10%; 
+}
+
+.personal-data-list li {      
+  border-bottom: 2px solid transparent;
+  cursor: pointer;    
+  padding: 16px 16px;    
+  display: flex;
+}
+
+.personal-data-list li a {
+  text-decoration: none;  
+  font-size: 1.1rem;  
+  align-self: center;
+}
+
+
+.personal-data-list li a:link,
+.personal-data-list li a:visited {
+  padding: 16px 16px;        
+  text-decoration: none;
+  color: black;  
+  border-bottom: 2px solid transparent;  
+  -webkit-transition: border-bottom 0.5s;  
+  transition: border-bottom 0.5s;  
+}
+
+.personal-data-list li a:hover,
+.personal-data-list li a:active {
+  border-bottom: 2px solid #038DB2;  
+}
+
+.personal-data-list--item a img {  
+  height: 30px;
+  width: 30px;
+  background: transparent;  
+}
+
+
+@media (min-width: 40rem) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .image-container {      
+    background-image: url("../resources/images/London-me.jpg");        
+    background-size: cover;          
+    background-repeat: no-repeat;    
+    height: 55vh;      
+    width: 50%;      
+    border-radius: 20px;  
+    border: 4px solid #dfdddd;  
+    margin: 5rem 2rem;
+  }
+
+  .about-me-container {
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 5%;  
+  }
+
+
+  .about-me-container p {
+    font-size: 1.5rem;
+    color: #666666;
+  }
+
+  .personal-data-list--item a img {
+    height: 30px;
+    width: 30px;
+  }
+}

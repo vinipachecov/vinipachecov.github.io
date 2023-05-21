@@ -1,0 +1,53 @@
+.title-container {
+    margin: 20px 20px
+}
+
+.send-email-button {
+    
+}
+
+.personal-data-list {    
+    list-style-type: none;  
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: flex-start;     
+    margin-top: 2%;     
+    margin-right: 10%; 
+  }
+  
+  .personal-data-list li {      
+    border-bottom: 2px solid transparent;
+    cursor: pointer;    
+    padding: 16px 16px;    
+    display: flex;
+  }
+  
+  .personal-data-list li a {
+    text-decoration: none;  
+    font-size: 1.1rem;  
+    align-self: center;
+  }
+  
+  
+  .personal-data-list li a:link,
+  .personal-data-list li a:visited {
+    padding: 16px 16px;        
+    text-decoration: none;
+    color: black;  
+    border-bottom: 2px solid transparent;  
+    -webkit-transition: border-bottom 0.5s;  
+    transition: border-bottom 0.5s;  
+  }
+  
+  .personal-data-list li a:hover,
+  .personal-data-list li a:active {
+    border-bottom: 2px solid #038DB2;  
+  }
+  
+  .personal-data-list--item a img {  
+    height: 30px;
+    width: 30px;
+    background: transparent;  
+  }
+  
